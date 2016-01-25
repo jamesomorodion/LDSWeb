@@ -12,7 +12,7 @@ app.factory('ldsService', function($resource){
 		return "TEST JAMES";
 	};
 
-	service.setAddress = function(lat, lng){
+	service.setAddress = function(lat, lng){alert("LDS Service");
 		var url = 'http://localhost:8080/LDS/rs/LDS/get/lat/lng/' + lat + '/' + lng;
 //		alert(url);
 		var adRes = $resource(url);
